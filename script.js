@@ -10,3 +10,9 @@ for (let i = 0; i < squaresNumber; i++) {
 
     board.append(square);
 }
+
+function setColor(element) {
+    const color = getRandomColor();
+    element.style.backgroundColor = color;
+    element.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`;
+}
